@@ -50,7 +50,8 @@ List<UserVo> userList = (List<UserVo>) request.getAttribute("userList");
 			<th>index</th>
 			<th>count</th>
 		</tr>
-
+		
+		<!-- begin end 는 index 기준 -->
 		<c:forEach items="${requestScope.userList}" var="userVo" varStatus="status" begin="3" end="5">
 		<tr>
 			<td>${userVo.no } </td>
